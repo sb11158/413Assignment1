@@ -1,0 +1,39 @@
+﻿
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:lightcyan;
+
+}
+label{
+    font-size: 20px;
+    color: darkblue;
+    width: 100px;
+    display: inline-block;
+    margin-left: 50px;
+}
+img{
+    height: 500px;
+    width: 380px;
+}
+p.jobs {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    
+}
+ul.quiz-props {
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 40px;
+}
+h2.title {
+    margin-left: 50px;
+}
+h5.title {
+    margin-left: 50px;
+}
+input.button {
+    margin-left: 50px;
+}
