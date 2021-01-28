@@ -1,12 +1,11 @@
-﻿var submit = document.getElementById("submitButton");
-
-submit.addEventListener("click", function () {
+﻿
+$("#submitButton").click(function () {
     //get input values
-    var a = +document.getElementById("a").value;
-    var gp = +document.getElementById("gp").value;
-    var q = +document.getElementById("q").value;
-    var ex = +document.getElementById("ex").value;
-    var inty = +document.getElementById("int").value;
+    var a = +$("#a").val();
+    var gp = +$("#gp").val();
+    var q = +$("#q").val();
+    var ex = +$("#ex").val();
+    var inty = +$("#int").val();
     var total = 0;
     var grade = "";
 
@@ -15,8 +14,8 @@ submit.addEventListener("click", function () {
     total += gp * .10;
     total += q * .10;
     total += ex * .20;
-    total += inty * .10;
-    
+    total += Math.floor(inty * .10);
+
     //determine letter grade 
     if (total >= 93) {
         grade = "A";
@@ -33,10 +32,10 @@ submit.addEventListener("click", function () {
     else if (total >= 83) {
         grade = "B";
     }
-    else if (total >= 80){
+    else if (total >= 80) {
         grade = "B-";
     }
-    else if (total >= 77 ) {
+    else if (total >= 77) {
         grade = "C+";
     }
     else if (total >= 73) {
